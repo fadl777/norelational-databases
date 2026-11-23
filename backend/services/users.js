@@ -1,5 +1,5 @@
 // TODO: uncomment this line once your User model is ready
-// const User = require("../models/user");
+const User = require("../models/user");
 
 // The service layer handles all interaction with the database.
 // Each function receives the data it needs and returns a result.
@@ -38,7 +38,7 @@ async function create(body) {
 // ----------------------------------------------------------
 async function update(id, body) {
   // TODO: return User.findByIdAndUpdate(id, body, { new: true })
-  return User.findByIdAndUpdate(id, body, {new: true});
+  return User.findByIdAndUpdate(id, body, { new: true });
 }
 
 // ----------------------------------------------------------
